@@ -1,59 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 BlogCMS - The Professional Blog Management Solution
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This repository hosts the landing page for **BlogCMS**, a modern and robust Content Management System designed for professional blogging and content publishing.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Key Features & Product Focus
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Tailored for Content:** Built to provide a seamless experience for creating, managing, and publishing high-quality blog posts.
+* **Scalable Architecture:** Designed with the Laravel framework for performance and scalability, suitable for individual users and enterprise setups.
+* **Intuitive Admin Panel:** Managed via Filament, ensuring an efficient and beautiful administration interface for contacts and content.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📈 SEO Optimization Built-In
 
-## Learning Laravel
+BlogCMS provides the tools necessary to rank well and drive traffic to your content:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+* **Meta Control:** Full control over **SEO Titles**, **Meta Descriptions**, and **Keywords** for every post and page.
+* **Clean URLs:** Automatic generation of SEO-friendly, **human-readable slugs** for clean and simple permalinks.
+* **Social Sharing:** Integrated **Open Graph (OG)** and **Twitter Card** meta tags to ensure posts look perfect when shared across social media platforms.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🔗 Quick Links & Contact
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Ready to get started, or have a question about customized solutions? Use the links below to connect directly.
 
-### Premium Partners
+### 📧 Direct Communication
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+| Channel | Contact Detail | Link |
+| :--- | :--- | :--- |
+| **Email Inquiry** | `dipeshkhanal79@gmail.com` | [Email Me Today](mailto:dipeshkhanal79@gmail.com?subject=Inquiry%20Regarding%20Blog%20CMS%20Subscription) |
+| **WhatsApp Chat** | `+977 9862221654` | [WhatsApp Me](https://wa.me/+9779862221654?text=Hello%20I%20am%20interested%20in%20the%20Blog%20CMS%20Subscription%20and%20would%20like%20to%20know%20more.) |
 
-## Contributing
+### 📄 Contact Form
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+You can also submit an inquiry directly through the form on the landing page:
+[Access the Contact Form](https://blog.khanaldipesh.com.np/#contact)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Technical Overview
 
-## Security Vulnerabilities
+The landing page and its backend components are built using industry-leading technologies:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* **Framework:** Laravel (PHP)
+* **Styling:** Tailwind CSS
+* **Administration:** Filament (for managing contacts and blog content)
 
-## License
+### 👥 Inquiry Management
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Customer contacts are managed through the internal system, using the following structure:
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `name` | string | Full name of the submitter. |
+| `email` | string | Email address for follow-up. |
+| `message` | text | The content of the user's inquiry. |
+| `created_at` | datetime | Submission timestamp. |
+
+---
+
+## 👨‍💻 Contributing
+
+As this is the landing page for a personal product, contributions to the core logic are generally not accepted, but bug reports and suggestions related to the landing page design and functionality are always welcome!
+
+---
