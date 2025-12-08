@@ -28,7 +28,8 @@
     <meta name="twitter:title" content="Blog CMS - Effortless Blog Management with SEO & Control">
     <meta name="twitter:description"
           content="Built for speed, control, and future-proofing. Get started with the best modern blog CMS today.">
-    <meta name="twitter:image" content="{{asset('og.jpg')}}"> @vite('resources/css/app.css')
+    <meta name="twitter:image" content="{{asset('og.jpg')}}">
+    @vite('resources/css/app.css')
     <style>
         /* Smooth scrolling for anchors */
         html {
@@ -43,15 +44,35 @@
 
     <script type="application/ld+json">
         {
-          "@@context": "https://schema.org",
-          "@@type": "Product",
-          "name": "Blog CMS",
-          "image": "{{asset('og.jpg')}}",
-          "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
-          "brand": {
-            "@@type": "Brand",
-            "name": "Blog CMS"
-          }
+           "@@context": "https://schema.org",
+       "@@type": "Product",
+       "name": "Blog CMS",
+       "image": "{{asset('og.jpg')}}",
+       "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
+       "brand": {
+        "@@type": "Brand",
+        "name": "Blog CMS"
+        },
+       "offers": {
+        "@@type": "Offer",
+        "url": "{{config('app.url')}}#pricing",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "price": "100",
+        "priceSpecification": {
+            "@@type": "UnitPriceSpecification",
+            "priceType": "http://schema.org/RegularPrice",
+            "billingPeriod": "P1Y",
+            "price": "100",
+            "priceCurrency": "USD"
+        }
+       },
+       "aggregateRating": {
+            "@@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1",
+            "bestRating": "5.0"
+       }
     }
     </script>
     <script type="application/ld+json">
