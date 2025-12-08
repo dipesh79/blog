@@ -79,7 +79,6 @@
                 "@@type": "DefinedRegion",
                 "addressCountry": "All"
             }
-        },
        },
        "aggregateRating": {
             "@@type": "AggregateRating",
