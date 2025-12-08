@@ -79,13 +79,13 @@
                 "@@type": "DefinedRegion",
                 "addressCountry": "All"
             }
-        }
-       },
-       "aggregateRating": {
+        },
+        "aggregateRating": {
             "@@type": "AggregateRating",
             "ratingValue": "4.9",
             "reviewCount": "1",
             "bestRating": "5.0"
+       }
        }
     </script>
 
