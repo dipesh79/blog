@@ -85,7 +85,9 @@
             "ratingValue": "4.9",
             "reviewCount": "1",
             "bestRating": "5.0"
-       }
+            }
+        }
+    }
     </script>
 
     <script type="application/ld+json">
