@@ -44,30 +44,30 @@
 
     <script type="application/ld+json">
         {
-           "@@context": "https://schema.org",
-       "@@type": "Product",
-       "name": "Blog CMS",
-       "image": "{{asset('og.jpg')}}",
-       "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
-       "brand": {
-        "@@type": "Brand",
-        "name": "Blog CMS"
-        },
-       "offers": {
-        "@@type": "Offer",
-        "url": "{{config('app.url')}}#pricing",
-        "availability": "https://schema.org/InStock",
-        "priceCurrency": "USD",
-        "price": "100",
-        "priceValidUntil": "{{ \Carbon\Carbon::now()->addYear()->format('Y-m-d') }}",
-        "priceSpecification": {
-            "@@type": "UnitPriceSpecification",
-            "priceType": "http://schema.org/RegularPrice",
-            "billingPeriod": "P1Y",
+            "@@context": "https://schema.org",
+            "@@type": "Product",
+            "name": "Blog CMS",
+            "image": "{{asset('og.jpg')}}",
+            "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
+            "brand": {
+                "@@type": "Brand",
+                "name": "Blog CMS"
+            },
+            "offers": {
+            "@@type": "Offer",
+            "url": "{{config('app.url')}}#pricing",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "USD",
             "price": "100",
-            "priceCurrency": "USD"
-        },
-        "shippingDetails": {
+            "priceValidUntil": "{{ \Carbon\Carbon::now()->addYear()->format('Y-m-d') }}",
+            "priceSpecification": {
+                "@@type": "UnitPriceSpecification",
+                "priceType": "http://schema.org/RegularPrice",
+                "billingPeriod": "P1Y",
+                "price": "100",
+                "priceCurrency": "USD"
+            },
+            "shippingDetails": {
             "@@type": "ShippingDeliveryOptions",
             "shippingRate": {
                 "@@type": "MonetaryAmount",
@@ -88,6 +88,7 @@
        }
     }
     </script>
+
     <script type="application/ld+json">
         {
           "@@context": "https://schema.org",
