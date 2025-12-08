@@ -19,13 +19,13 @@
     <meta property="og:title" content="Blog CMS - Effortless Blog Management with SEO & Control">
     <meta property="og:description"
           content="A fully-featured CMS with bulletproof SEO, dynamic content, and all the tools you need to run a modern, high-performance blog.">
-    <meta property="og:image" content="{{asset('og.jpg')}}">
+    <meta property="og:image" content="{{asset('og.png')}}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{config('app.url')}}">
     <meta name="twitter:title" content="Blog CMS - Effortless Blog Management with SEO & Control">
     <meta name="twitter:description"
           content="Built for speed, control, and future-proofing. Get started with the best modern blog CMS today.">
-    <meta name="twitter:image" content="{{asset('og.jpg')}}">
+    <meta name="twitter:image" content="{{asset('og.png')}}">
     @vite('resources/css/app.css')
     <style>
         /* Smooth scrolling for anchors */
@@ -42,7 +42,7 @@
            "@@context": "https://schema.org",
        "@@type": "Product",
        "name": "Blog CMS",
-       "image": "{{asset('og.jpg')}}",
+       "image": "{{asset('og.png')}}",
        "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
        "brand": {
         "@@type": "Brand",
