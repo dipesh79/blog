@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog CMS - Effortless Blog Management with SEO & Control</title>
-
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
     <link rel="manifest" href="{{asset('site.webmanifest')}}">
-
     <meta name="description"
           content="Blog CMS is a fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.">
     <meta name="keywords"
@@ -35,25 +33,23 @@
         html {
             scroll-behavior: smooth;
         }
-
         /* Custom scroll-padding-top to account for fixed navbar height */
         section {
             scroll-margin-top: 6rem;
         }
     </style>
-
     <script type="application/ld+json">
         {
            "@@context": "https://schema.org",
-           "@@type": "Product",
-           "name": "Blog CMS",
-           "image": "{{asset('og.jpg')}}",
-           "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
-           "brand": {
-                "@@type": "Brand",
-                "name": "Blog CMS"
-            },
-        "offers": {
+       "@@type": "Product",
+       "name": "Blog CMS",
+       "image": "{{asset('og.jpg')}}",
+       "description": "A fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.",
+       "brand": {
+        "@@type": "Brand",
+        "name": "Blog CMS"
+        },
+       "offers": {
         "@@type": "Offer",
         "url": "{{config('app.url')}}#pricing",
         "availability": "https://schema.org/InStock",
@@ -66,30 +62,16 @@
             "billingPeriod": "P1Y",
             "price": "100",
             "priceCurrency": "USD"
-        },
-        "shippingDetails": {
-            "@@type": "ShippingDeliveryOptions",
-            "shippingRate": {
-                "@@type": "MonetaryAmount",
-                "value": "0",
-                "currency": "USD"
-            },
-            "deliveryMethod": "https://schema.org/DigitalTransfer",
-            "shippingDestination": {
-                "@@type": "DefinedRegion",
-                "addressCountry": "All"
-            }
-        },
-        "aggregateRating": {
+        }
+       },
+       "aggregateRating": {
             "@@type": "AggregateRating",
             "ratingValue": "4.9",
             "reviewCount": "1",
             "bestRating": "5.0"
-            }
-        }
+       }
     }
     </script>
-
     <script type="application/ld+json">
         {
           "@@context": "https://schema.org",
@@ -98,24 +80,18 @@
           "url": "{{config('app.url')}}"
         }
     </script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1SEF6PY3M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
-
         gtag('js', new Date());
-
         gtag('config', 'G-K1SEF6PY3M');
     </script>
     {{--Google Search Console--}}
     <meta name="google-site-verification" content="XjHLWJOXkGoiX70YdLCYsxreAq0tUi3dI9PGa0Z4lA4"/>
-
-
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
 <x-navbar/>
