@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
-    <link rel="manifest" href="{{asset('site.webmanifest')}}">
     <meta name="description"
           content="Blog CMS is a fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.">
     <meta name="keywords"
