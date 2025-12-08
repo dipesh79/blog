@@ -59,6 +59,7 @@
         "availability": "https://schema.org/InStock",
         "priceCurrency": "USD",
         "price": "100",
+        "priceValidUntil": "{{ \Carbon\Carbon::now()->addYear()->format('Y-m-d') }}",
         "priceSpecification": {
             "@@type": "UnitPriceSpecification",
             "priceType": "http://schema.org/RegularPrice",
