@@ -66,7 +66,20 @@
             "billingPeriod": "P1Y",
             "price": "100",
             "priceCurrency": "USD"
-        }
+        },
+        "shippingDetails": {
+            "@@type": "ShippingDeliveryOptions",
+            "shippingRate": {
+                "@@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "USD"
+            },
+            "deliveryMethod": "https://schema.org/DigitalTransfer",
+            "shippingDestination": {
+                "@@type": "DefinedRegion",
+                "addressCountry": "All"
+            }
+        },
        },
        "aggregateRating": {
             "@@type": "AggregateRating",
