@@ -109,6 +109,34 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="flex p-8 bg-amber-50 rounded-xl shadow-md relative overflow-hidden">
+                <div
+                    class="flex-shrink-0 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white mr-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M7 4v16M17 4v16M3 8h4m10 0h4M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-3 text-amber-700">Theme & Design Customization (WIP)</h3>
+                    <ul class="list-none space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span>
+                            Default Theme: Highly optimized starting layout.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span>
+                            Theme Selection via Dashboard
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span>
+                            Future updates will introduce new theme options.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
