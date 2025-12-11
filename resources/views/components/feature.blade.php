@@ -120,7 +120,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-bold mb-3 text-amber-700">Theme & Design Customization (WIP)</h3>
+                    <h3 class="text-2xl font-bold mb-3 text-amber-700">Theme & Design Customization</h3>
                     <ul class="list-none space-y-2 text-gray-600">
                         <li class="flex items-center">
                             <span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span>
