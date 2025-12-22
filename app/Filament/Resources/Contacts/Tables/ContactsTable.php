@@ -19,7 +19,7 @@ class ContactsTable
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable()
-                    ->description(fn($record) => $record->email) // Show email under name for quick reference
+                    ->description(fn ($record) => $record->email) // Show email under name for quick reference
                     ->grow(), // Allow the name column to take up more space
 
                 // 2. Email Column (Actionable & Copyable)
@@ -28,13 +28,13 @@ class ContactsTable
                     ->searchable()
                     ->copyable() // Allow quick copy to clipboard
                     ->icon('heroicon-m-envelope') // Add a visual cue
-                    ->url(fn($record): string => "mailto:{$record->email}"), // Make it a clickable mailto link
+                    ->url(fn ($record): string => "mailto:{$record->email}"), // Make it a clickable mailto link
 
                 // 3. Message Preview (Non-Searchable for performance, view full in modal)
                 TextColumn::make('message')
                     ->label('Message Snippet')
                     ->limit(50) // Show a brief preview
-                    ->tooltip(fn($state): string => $state) // Show full message on hover
+                    ->tooltip(fn ($state): string => $state) // Show full message on hover
                     ->placeholder('No message provided')
                     ->toggleable(isToggledHiddenByDefault: false), // Keep visible by default
 

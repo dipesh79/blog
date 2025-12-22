@@ -8,12 +8,14 @@ use Illuminate\View\Component;
 
 class Testimonial extends Component
 {
+    public $testimonials;
+
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->testimonials = \App\Models\Testimonial::with(['site.client'])->latest()->get();
     }
 
     /**

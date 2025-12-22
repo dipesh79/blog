@@ -25,6 +25,7 @@ class ClientResource extends Resource
     protected static string|null|\UnitEnum $navigationGroup = 'Content Management';
 
     protected static ?int $navigationSort = 1;
+
     protected static ?string $recordTitleAttribute = 'name';
 
     public static function getNavigationBadge(): ?string

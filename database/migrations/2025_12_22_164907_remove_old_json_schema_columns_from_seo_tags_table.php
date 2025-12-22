@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('seo_tags', function (Blueprint $table) {
-            $table->dropColumn(['schema_type', 'schema_name','schema_description','schema_url']);
+            $table->dropColumn(['schema_type', 'schema_name', 'schema_description', 'schema_url']);
         });
     }
 

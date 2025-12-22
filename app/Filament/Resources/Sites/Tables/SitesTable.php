@@ -6,8 +6,8 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
 
 class SitesTable
@@ -31,16 +31,15 @@ class SitesTable
                 TextColumn::make('launched_at')
                     ->label('Launch Date')
                     ->date()
-                    ->toggleable(isToggledHiddenByDefault:true)
+                    ->toggleable(isToggledHiddenByDefault: true)
                     ->sortable(),
                 TextColumn::make('expires_at')
                     ->label('Expiry Date')
                     ->date()
-                    ->toggleable(isToggledHiddenByDefault:true)
+                    ->toggleable(isToggledHiddenByDefault: true)
                     ->sortable(),
-                IconColumn::make('is_featured')
+                ToggleColumn::make('is_featured')
                     ->label('Featured Website')
-                    ->boolean()
                     ->sortable(),
                 TextColumn::make('rating')
                     ->label('Website Rating')

@@ -25,21 +25,21 @@ return [
      *
      * The title will be used as the title of the page.
      */
-    'title' => 'Title',
+    'title' => 'Blog CMS - Effortless Blog Management with SEO & Control',
 
     /**
      * Default meta-description for the application.
      *
      * The description will be used as the meta description of the page.
      */
-    'description' => 'Description',
+    'description' => 'Blog CMS is a fully-featured content management system built on Laravel for fast, SEO-ready, and high-performance blog creation and management.',
 
     /**
      * Default meta-keywords for the application.
      *
      * The keywords will be used as the meta-keywords of the page.
      */
-    'keywords' => 'Keywords',
+    'keywords' => 'Blog CMS, Laravel CMS, Blog platform, SEO ready, Content Management, full control, web development',
 
     /**
      * Default meta-robots for the application.

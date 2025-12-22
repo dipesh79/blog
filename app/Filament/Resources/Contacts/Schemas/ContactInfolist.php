@@ -6,7 +6,6 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
-
 class ContactInfolist
 {
     public static function configure(Schema $schema): Schema

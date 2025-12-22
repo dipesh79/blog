@@ -71,5 +71,4 @@ class ContactResource extends Resource
     {
         return false;
     }
-
 }
