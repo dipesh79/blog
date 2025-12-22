@@ -2,6 +2,9 @@
 
 namespace App\Providers\Filament;
 
+use AchyutN\FilamentLogViewer\FilamentLogViewer;
+use App\Models\User;
+use DutchCodingCompany\FilamentDeveloperLogins\FilamentDeveloperLoginsPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -51,6 +54,14 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+            ])
+            ->plugins([
+                FilamentLogViewer::make()->authorize(function () {
+                    return true;
+                }),
+                FilamentDeveloperLoginsPlugin::make()
+                    ->enabled(! app()->isProduction())
+                    ->users(fn () => User::pluck('email', 'name')->toArray()),
             ])
             ->authMiddleware([
                 Authenticate::class,
