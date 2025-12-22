@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Response;
 
 class SitemapController
 {
-
     public function index()
     {
         // Initialize XML string
@@ -14,7 +13,7 @@ class SitemapController
         $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
 
         // Add static URLs (fine as-is)
-        $xml .= '<url><loc>' . route('landing') . '</loc><lastmod>' . now()->toAtomString() . '</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>';
+        $xml .= '<url><loc>'.route('landing').'</loc><lastmod>'.now()->toAtomString().'</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>';
         $xml .= '</urlset>';
 
         // Return the XML response

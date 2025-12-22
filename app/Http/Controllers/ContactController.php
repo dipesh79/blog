@@ -14,9 +14,6 @@ class ContactController extends Controller
 {
     /**
      * Store a new contact message.
-     *
-     * @param Request $request
-     * @return RedirectResponse
      */
     public function store(Request $request): RedirectResponse
     {
@@ -28,14 +25,14 @@ class ContactController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'message' => 'required|string',
-            'cf-turnstile-response' => ['required', new Turnstile()],
+            'cf-turnstile-response' => ['required', new Turnstile],
         ]);
 
         // 2. Check for failure and redirect to the custom URL
         if ($validator->fails()) {
             return redirect($redirectUrl) // Use the redirect URL here
-            ->withErrors($validator)  // Pass validation errors back to the session
-            ->withInput();            // Flash the input data back
+                ->withErrors($validator)  // Pass validation errors back to the session
+                ->withInput();            // Flash the input data back
         }
 
         // 3. Validation passed, proceed with storing data
@@ -50,7 +47,8 @@ class ContactController extends Controller
 
         } catch (\Exception $e) {
             // Database Error
-            \Log::error('Contact Form Submission Error: ' . $e->getMessage());
+            \Log::error('Contact Form Submission Error: '.$e->getMessage());
+
             return redirect($redirectUrl)->with('error',
                 'There was an error submitting your message. Please try again later.');
         }

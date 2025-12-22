@@ -19,7 +19,18 @@ class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Envelope;
+
+    protected static ?string $label = 'Contacts';
+
+    protected static string|null|\UnitEnum $navigationGroup = 'Support';
+
+    protected static ?int $navigationSort = 4;
+
+    public static function getNavigationBadge(): ?string
+    {
+        return self::getEloquentQuery()->count();
+    }
 
     public static function form(Schema $schema): Schema
     {
@@ -60,5 +71,4 @@ class ContactResource extends Resource
     {
         return false;
     }
-
 }
