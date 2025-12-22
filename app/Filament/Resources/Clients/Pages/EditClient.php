@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Filament\Resources\Seos\Pages;
+namespace App\Filament\Resources\Clients\Pages;
 
 use App\Filament\Concerns\RedirectToIndex;
-use App\Filament\Resources\Seos\SeoResource;
+use App\Filament\Resources\Clients\ClientResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditSeo extends EditRecord
+class EditClient extends EditRecord
 {
     use RedirectToIndex;
 
-    protected static string $resource = SeoResource::class;
+    protected static string $resource = ClientResource::class;
 
     protected function getHeaderActions(): array
     {

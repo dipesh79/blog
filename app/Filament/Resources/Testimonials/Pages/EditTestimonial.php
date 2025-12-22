@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Filament\Resources\Seos\Pages;
+namespace App\Filament\Resources\Testimonials\Pages;
 
 use App\Filament\Concerns\RedirectToIndex;
-use App\Filament\Resources\Seos\SeoResource;
+use App\Filament\Resources\Testimonials\TestimonialResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditSeo extends EditRecord
+class EditTestimonial extends EditRecord
 {
     use RedirectToIndex;
 
-    protected static string $resource = SeoResource::class;
+    protected static string $resource = TestimonialResource::class;
 
     protected function getHeaderActions(): array
     {

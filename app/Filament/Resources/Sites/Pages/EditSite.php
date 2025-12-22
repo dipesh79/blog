@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Filament\Resources\Seos\Pages;
+namespace App\Filament\Resources\Sites\Pages;
 
 use App\Filament\Concerns\RedirectToIndex;
-use App\Filament\Resources\Seos\SeoResource;
+use App\Filament\Resources\Sites\SiteResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditSeo extends EditRecord
+class EditSite extends EditRecord
 {
     use RedirectToIndex;
 
-    protected static string $resource = SeoResource::class;
+    protected static string $resource = SiteResource::class;
 
     protected function getHeaderActions(): array
     {
